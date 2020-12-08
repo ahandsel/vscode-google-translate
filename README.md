@@ -23,25 +23,34 @@ This feature inserts a newline under the current one with translation
 1. Select menu 'Translate line(s) under the cursor'
 1. Select the output languages you want and enjoy
 
-## Keyboard shortcut
-
-If the keyboard shortcut doesn't work for you, you have two options:
-
-* Open the command palette and manually select 'Translate selection(s)'
-* Open your keyboard shortcuts, search for 'Translate selection(s)' and set a new shortcut for this command.
-
-## Settings
+## Preferred language settings
 
 Want to quickly translate into a specific language?
-Here's how to set your preferred language to Japanese.
+Run Command 'Set Preferred Language' or Set it in VSCode extension settings
 
-1. Get your preferred language code from [the web](https://www.w3schools.com/tags/ref_language_codes.asp).
-1. Add the following setting to your workspace: `"vscodeGoogleTranslate.preferredLanguage": "ja"`
-1. Open the command palette and select "Translate selection(s) to preferred language".
+## Tooltip Hover Translation
+
+By default when you hover over comments and code, you will get a translation into
+your preferred language hovering above the element. If you want to turn this off
+go into extension settings and un-check HoverTranslations then restart VSCode.
+
+## Proxy Support
+
+You can use a proxy to translate text with the following settings:
+
+```js
+"vscodeGoogleTranslate.host": "120.0.0.1"       // Proxy disabled if empty
+"vscodeGoogleTranslate.port": "8080"            // Proxy port
+"vscodeGoogleTranslate.username": "admin"       // Proxy auth disabled if empty
+"vscodeGoogleTranslate.password": "password"    // Proxy password
+```
 
 ## Pull request
 
 Pull request are welcome. Fork the project, clone it, install dependencies `npm i` and start coding :-).
+
+If you want to make changes to the code hovering translations. Please run "npm run compile" from the root in order to compile the typescript
+part of the codebase.
 
 ## Give five stars 🤩
 

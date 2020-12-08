@@ -39,8 +39,11 @@ const languages = [
 		name: 'Cebuano',
 		value: 'ceb',
 	}, {
-		name: 'Chinese',
+		name: 'Chinese (Simplified)',
 		value: 'zh-CN',
+	}, {
+		name: 'Chinese (Traditional)',
+		value: 'zh-TW',
 	}, {
 		name: 'Corsican',
 		value: 'co',
@@ -100,7 +103,7 @@ const languages = [
 		value: 'haw',
 	}, {
 		name: 'Hebrew',
-		value: 'he',
+		value: 'iw',
 	}, {
 		name: 'Hindi',
 		value: 'hi',
@@ -287,6 +290,9 @@ const languages = [
 	}, {
 		name: 'Urdu',
 		value: 'ur',
+	}, {
+		name: 'Uyghur',
+		value: 'ug',
 	}, {
 		name: 'Uzbek',
 		value: 'uz',
